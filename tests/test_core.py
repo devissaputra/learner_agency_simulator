@@ -60,6 +60,13 @@ class CoreTests(unittest.TestCase):
             mastery["request_hint"],
         )
 
+    def test_decline_support_has_zero_probability_without_offer(self):
+        probabilities = core.learner_action_probabilities(
+            "confusion",
+            support_offer="none",
+        )
+        self.assertEqual(probabilities["decline_support"], 0.0)
+
     def test_support_offer_changes_action_distribution(self):
         none = core.learner_action_probabilities(
             "confusion",

@@ -1,3 +1,6 @@
-run,step,state,support
-1,0,productive_struggle,none
-1,1,confusion,none
+profile,help_seeking_tendency,support_acceptance,persistence,challenge_preference,strategy_switching,autonomy_preference
+balanced,0.55,0.72,0.68,0.48,0.62,0.70
+support_receptive,0.80,0.90,0.60,0.35,0.55,0.35
+autonomy_seeking,0.35,0.45,0.72,0.65,0.70,0.92
+help_avoiding,0.15,0.35,0.78,0.45,0.50,0.82
+challenge_seeking,0.42,0.65,0.70,0.95,0.62,0.72

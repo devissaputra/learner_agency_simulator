@@ -217,7 +217,9 @@ def learner_action_probabilities(
             "decline_support": 0.10 + 0.22 * p["autonomy_preference"],
         }
 
-    if support_offer != "none":
+    if support_offer == "none":
+        weights["decline_support"] = 0.0
+    else:
         acceptance = p["support_acceptance"]
         weights["decline_support"] += 0.55 * (1.0 - acceptance)
         if support_offer == "guided_hint":

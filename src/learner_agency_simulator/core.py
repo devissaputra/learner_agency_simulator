@@ -133,12 +133,14 @@ def _shift(
     probabilities: Mapping[str, float],
     changes: Mapping[str, float],
 ) -> dict[str, float]:
+    """Apply bounded additive transition shifts and renormalize."""
     adjusted = {
-        state: probabilities[state] + changes.get(state, 0.0)
+        state: max(
+            0.0,
+            probabilities[state] + changes.get(state, 0.0),
+        )
         for state in STATES
     }
-    if any(value < 0 for value in adjusted.values()):
-        raise ValueError("transition adjustment produced a negative weight")
     return _normalize(adjusted)
 
 

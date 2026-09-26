@@ -1,0 +1,30 @@
+{
+  "question": "What do support policies imply under stated transition assumptions?",
+  "data": "Synthetic state-transition matrices, learner preferences and support policies.",
+  "method": "Simulate learner choices and accepted/declined support; compare policies over seeds and perturbed transition assumptions.",
+  "formula": "State occupancy = observations in state / all recorded states.",
+  "interpretation": "The initial state is included in occupancy; transition counts exclude it. Policy differences are consequences of the specified simulator, not estimated effects in real learners. Sensitivity to the transition assumptions is central.",
+  "status": "SYNTHETIC / RULE-BASED PROTOTYPE | no educational validity claim",
+  "source": "results/review_examples.json",
+  "rows": [
+    {
+      "label": "mastery occupancy: 3 of 10 states",
+      "path": [
+        "outputs",
+        "mastery occupancy: 3 of 10 states"
+      ],
+      "unit": "unitless"
+    },
+    {
+      "label": "accepted support: 2 of 4 offers",
+      "path": [
+        "outputs",
+        "accepted support: 2 of 4 offers"
+      ],
+      "unit": "unitless"
+    }
+  ],
+  "table_title": "Worked example — illustrative, not a measured research result",
+  "evidence_note": "Illustrative inputs and calculations are in scripts/review_examples.py.",
+  "finding": "This simulator compares support policies while allowing synthetic learners to request, accept, or decline help. It tracks state occupancy, intervention burden, recovery, and time to first mastery across seeded trajectories and sensitivity scenarios. The outcomes reveal what the chosen transition assumptions imply; they do not establish that a policy improves agency or learning outside the simulation."
+}

@@ -1,0 +1,8 @@
+{
+  "kind": "illustrative_calculation",
+  "note": "Illustrative trajectory-count arithmetic, not a policy comparison.",
+  "outputs": {
+    "mastery occupancy: 3 of 10 states": 0.3,
+    "accepted support: 2 of 4 offers": 0.5
+  }
+}

@@ -1,14 +1,29 @@
 # Learner Agency Simulator
 
+This simulator compares support policies while allowing synthetic learners to request, accept, or decline help. It tracks state occupancy, intervention burden, recovery, and time to first mastery across seeded trajectories and sensitivity scenarios. The outcomes reveal what the chosen transition assumptions imply; they do not establish that a policy improves agency or learning outside the simulation.
+
+## Start here
+
+- [Calculations, evidence and verification scope](CALCULATIONS.md)
+- [Figure sources and exact numerical paths](docs/figure_spec.json)
+- [Data status](data/README.md)
+
+![Study question, data, design and interpretation](assets/review_overview.svg)
+
+![Defined calculation and source-linked evidence](assets/review_calculations.svg)
+
+**Review scope:** 33 existing unittest checks passed. The bundled demonstration executed successfully in this review.
+
+## Detailed project documentation
+
 > Transparent learner-system interaction simulator for stress-testing agency-aware adaptive-support policies.
 
 [![CI](https://github.com/devissaputra/learner_agency_simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/devissaputra/learner_agency_simulator/actions/workflows/ci.yml)
 
-![Learner Agency Simulator workflow](assets/architecture.svg)
 
 **Area:** AI in Education (AIEd) · Learner Agency & Adaptive Learning  
 **Status:** working research prototype  
-**Author:** Devis Wawan Saputra
+**Author:** Devis Saputra
 
 ## What this project is for
 
@@ -30,7 +45,6 @@ The result is not a digital twin of a learner. It is a transparent stress-test e
 
 ## Learner-system interaction model
 
-![Learner Agency Simulator data and reasoning flow](assets/data_flow.svg)
 
 Each simulation step keeps three concepts separate:
 
@@ -183,7 +197,6 @@ Running the same configuration again therefore returns the same simulated trajec
 
 ## Synthetic demo
 
-![Synthetic demo snapshot for Learner Agency Simulator](assets/demo_snapshot.svg)
 
 The bundled demo performs three tasks:
 
@@ -242,7 +255,6 @@ The current baseline uses only the Python standard library.
 
 ## Evaluation view
 
-![Learner Agency Simulator evaluation checklist](assets/evaluation_dashboard.svg)
 
 The graphic identifies evidence a real simulator study should collect.
 

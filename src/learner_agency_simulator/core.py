@@ -1,3 +1,7 @@
+# Calculation reading guide: ../CALCULATIONS.md (repository root).
+# State occupancy = observations in state / all recorded states.
+# The initial state is included in occupancy; transition counts exclude it. Policy differences are consequences of the specified simulator, not estimated effects in real learners. Sensitivity to the transition assumptions is central.
+
 import math
 import random
 from collections.abc import Callable, Mapping, Sequence
